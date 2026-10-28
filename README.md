@@ -59,7 +59,7 @@ Worker 解码（如有必要）→ 定向覆写 → 重新编码 → 返回 Shad
 2. 将仓库中的 Worker JavaScript 源码（例如 `worker.js`）粘贴到在线编辑器中。
 3. 按下方说明修改代码顶部的 `ORIGIN`、`UPSTREAM_PATH` 和 `ALLOWED_PATH`。
 4. 点击 **Deploy**，使用分配的 `*.workers.dev` 地址进行测试。
-5. 可选：在 Worker 的 **Settings → Domains & Routes** 添加自定义域名。
+5. 在 Worker 的 **Settings → Domains & Routes** 添加自定义域名（推荐 因为GFW阻断了默认dev域名的访问）。
 6. 在 Shadowrocket 中添加新的 Worker 订阅地址，刷新订阅并测试连接。
 
 ### 配置示例
@@ -149,5 +149,3 @@ X-Fingerprint-Overrides: 3
 - [Cloudflare Workers 文档](https://developers.cloudflare.com/workers/)
 
 ---
-
-本项目是一个最小化的兼容性覆写层，不是 VPN 服务，也不提供代理节点。部署与使用请遵守当地法律法规和相关服务条款。
